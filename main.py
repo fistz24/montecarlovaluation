@@ -18,10 +18,10 @@ def calculate_value_distribution(parameter_dict_1, parameter_dict_2, parameter_d
     for i in parameter_dict2:
         if parameter_dict_distribution[i] =='normal':
             parameter_list.append((np.random.normal(parameter_dict_1[i], parameter_dict_2[i]))/100)
-        if parameter_dict_distribution[i] =='traingular':
+        if parameter_dict_distribution[i] =='triangular':
             lower_bound = parameter_dict[i]
             mode = parameter_dict_2[i]
-            parameter_list.append((np.random.traingular(lower_bound, mode, 2*mode-lower_bound))/100)
+            parameter_list.append((np.random.triangular(lower_bound, mode, 2*mode-lower_bound))/100)
         if parameter_dict_distribution[i] =='uniform':
             parameter_list.append((np.random.uniform(parameter_dict_1[i], parameter_dict_2[i]))/100)
     parameter_list.append(parameter_dict_1['net_debt'])
