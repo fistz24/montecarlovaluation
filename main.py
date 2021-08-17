@@ -271,7 +271,7 @@ with st.beta_expander('Monte Carlo Simulation'):
             parameter_dict_2['capex ratio'] =sttddev_input
             parameter_dict_distribution['capex ratio']='normal'
 
-        elif radio_button_tax_rate =='Triangular'
+        elif radio_button_tax_rate =='Triangular':
             lower_input= st.number_input('Lower end capex ratio (in %)')
             mode_input = st.number_input('Mode capex ratio (in%)')
             parameter_dict_1['capex ratio'] = lower_input
