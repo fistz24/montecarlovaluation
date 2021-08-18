@@ -1,5 +1,5 @@
 import pandas as pd
-from yahoo_fin import stock_info as si
+from yahoo_finance import stock_info as si
 import streamlit as st
 import numpy as np
 from matplotlib import pyplot as plt
